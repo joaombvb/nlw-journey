@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+    <script>dayjs.locale('pt-br')</script>
+    <title>NLW Journey</title>
+</head>
+<body>
+    <div id="app">
+        <form onsubmit="salvarAtividade(event)">
+            
+            <div id="place" class="card-bg">
+                <img src="./assets/map-pin.png" alt="icone de localização"> 
+                São Luís, MA, Brasil
+
+            </div>
+
+            <div class="fields">
+                <div class="field-wrapper">
+                    <img src="./assets/tag.png" alt="icone de etiqueta">
+                    <input type="text" placeholder="Qual a atividade?" name="atividade" required>
+                </div>
+                
+                <div class="field-wrapper">
+                    <img src="./assets/calendar.png" alt="icone de calendario">
+                    <select name="dia">
+                        <option value="2024-02-01"></option>
+                    </select>
+                </div>
+
+                <div class="field-wrapper">
+                    <img src="./assets/clock.png" alt="icone de relogio">
+                    <select name="hora">
+                        <option value="10:00"></option>
+                    </select>
+                </div>
+            </div>
+            
+            <button>Salvar atividade</button>
+
+        </form>
+
+        <main>
+
+            <h1>Atividades</h1>
+            <section></section>
+
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
