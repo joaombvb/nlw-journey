@@ -107,6 +107,13 @@ h1 {
     margin: 32px 0 24px;
 }
 
+.placeholder-atividades {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    text-align: center;
+}
+
+
 section input[type="checkbox"] {
     position: absolute;
     inset: 0;
@@ -168,6 +175,11 @@ time.full {
         margin-top: 0;
         text-align: left;
     }
+
+    .placeholder-atividades {
+        text-align: left;
+    }
+    
 
     time.full {
         display: block;
